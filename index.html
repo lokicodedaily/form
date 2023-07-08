@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <h1 id="form-heading">Registration Form</h1>
+    <div id="form-block">
+      <span id="successful-msg"></span>
+      <p id="required-field-caption">
+        Required fields are followed by *
+      </p>
+      <form method="post" id="basic-form" novalidate>
+        <p>
+          <label for="name"> Name <span>*</span></label>
+          <input type="text" name="name" id="name" placeholder="Enter your name..." required/>
+          <span class="name-error-msg error-msg"></span>
+        </p>
+
+        <p>
+          <label for="email"> Email <span>*</span></label>
+          <input type="email" name="email" id="email" placeholder="Enter your email..." required/>
+          <span class="email-error-msg error-msg"></span>
+        </p>
+
+        <p>
+          <label for="password"> Password <span>*</span></label>
+          <input type="password" name="password" id="password" placeholder="Create your password..." required/>
+          <span class="password-error-msg error-msg"></span>
+        </p>
+
+        <p>
+          <label for="phone"> Mobile No. <span>*</span></label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your number..." required/>
+          <span class="phone-error-msg error-msg"></span>
+        </p>
+
+        <p>
+          <label for="date"> DOB <span>*</span></label>
+          <input type="date" name="date" id="date" required/>
+          <span class="date-error-msg error-msg"></span>
+        </p>
+
+        <p>
+          <label for="location">Location</label>
+          <input type="text" name="location" id="location" maxlength="30" placeholder="Current location">
+        </p>
+
+        <p>
+          <label for="color">Favourite Color</label>
+          <input type="color" name="color" id="color">
+        </p>
+
+        <button type="submit" id="form-submit-button">Submit</button>
+        <button id="form-clear-btn">Clear</button>
+      </form>
+
+    </div>
+  </body>
+  <script src="./main.js" type="module"></script>
+</html>
