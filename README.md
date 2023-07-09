@@ -1,3 +1,3 @@
 # Form Validation
-https://gregarious-caramel-d64bfd.netlify.app
-https://lokicodedaily.github.io/form/
+1. https://gregarious-caramel-d64bfd.netlify.app
+2. https://lokicodedaily.github.io/form/
